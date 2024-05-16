@@ -86,6 +86,7 @@
 
         <div class="flex justify-between mt-8 mb-6 items-center mx-8">
           <button
+            id="backProjectBtn"
             class="bg-[#3cb4ac] hover:bg-[#147b74] text-white px-6 py-2 rounded-3xl text-[12px] font-medium tracking-wide"
           >
             Back this project
@@ -229,7 +230,7 @@
 
     <section
       id="backProject"
-      class="p-8 bg-white relative w-2/5 flex flex-col justify-center rounded-md left-[30%]"
+      class="p-8 bg-white w-2/5 flex-col justify-center rounded-md left-[30%] top-[4%] fixed z-10 hidden"
     >
       <!-- Selection modal start -->
       <!-- <img
@@ -245,11 +246,17 @@
         >Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
         the world?
       </span>
-      <div
+      <label
+        for="radio0"
         class="pledgeContainer flex mt-8 outline outline-gray-200 outline-2 rounded-md py-5 px-6"
       >
         <div>
-          <input type="radio" name="pledge" id="" />
+          <input
+            type="radio"
+            name="pledge"
+            id="radio0"
+            class="accent-[#3cb4ac]"
+          />
         </div>
         <div class="flex flex-col ml-7">
           <span
@@ -264,13 +271,19 @@
             updates via email.</span
           >
         </div>
-      </div>
-      <div
+      </label>
+      <label
+        for="radio1"
         class="pledgeContainer flex flex-col mt-4 outline outline-gray-200 outline-2 rounded-md pt-5 px-6"
       >
         <div class="flex">
           <div>
-            <input type="radio" name="pledge" id="" />
+            <input
+              type="radio"
+              name="pledge"
+              id="radio1"
+              class="accent-[#3cb4ac]"
+            />
           </div>
           <div class="flex flex-col ml-7">
             <div class="flex justify-between items-center mb-4">
@@ -325,13 +338,19 @@
             <!-- Selected pledge end -->
           </span>
         </div>
-      </div>
-      <div
+      </label>
+      <label
+        for="radio2"
         class="pledgeContainer flex flex-col mt-4 outline outline-gray-200 outline-2 rounded-md pt-5 px-6"
       >
         <div class="flex">
           <div>
-            <input type="radio" name="pledge" id="" />
+            <input
+              type="radio"
+              name="pledge"
+              id="radio2"
+              class="accent-[#3cb4ac]"
+            />
           </div>
           <div class="flex flex-col ml-7">
             <div class="flex justify-between items-center mb-4">
@@ -387,7 +406,7 @@
             <!-- Selected pledge end -->
           </span>
         </div>
-      </div>
+      </label>
       <div
         class="flex mt-4 outline outline-gray-200 outline-2 rounded-md py-5 px-6"
       >
